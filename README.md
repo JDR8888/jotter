@@ -1,4 +1,4 @@
-# Jotter (Module 10 Challenge Columbia U)
+# Jotter (Module 11 Challenge Columbia U)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/gluten-free.svg)](https://forthebadge.com) 
 
 ## Description
@@ -36,7 +36,7 @@ N/A
 N/A
 # Credits   
   [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com) 
-  inquire.js, node.js, jest.js
+  express.js, node.js, nodemon
 # License
 Please see the repo for license info
 
