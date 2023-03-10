@@ -67,6 +67,7 @@ const renderActiveNote = () => {
 };
 
 const handleNoteSave = () => {
+  // e.preventDefault(); //currently notes disappear when save btn clicked. should help
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
