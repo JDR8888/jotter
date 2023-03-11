@@ -9,7 +9,7 @@ const app = express();
 
 //middleware stuff
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', api); //be able to get api routes
 
