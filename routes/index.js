@@ -4,6 +4,6 @@ const router = require('express').Router();
 const notesRouter = require('./notes');
 
 //use the bloody router 
-router.use(notesRouter); 
+router.use('/api/notes',notesRouter); 
 //export the goddamn thing
 module.exports = router;
