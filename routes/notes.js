@@ -6,7 +6,7 @@ const uuid = require('../helpers/uuid');
 const db = require('../db/db.json');
 
 //route for getting the notes from db
-notes.get('/api/notes', (req, res) => {
+notes.get('/notes', (req, res) => {
   readFromFile(db).then((data) => res.json(JSON.parse(data))//,
 //   console.log(res)
   )
