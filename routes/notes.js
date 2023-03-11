@@ -3,16 +3,16 @@ const notes = require('express').Router();
 //since we're handling files we need fs functionality, which we should have through the fs utility helper file 
 const {readAndAppend, readFromFile} = require('../helpers/fsUtil.js');
 const uuid = require('../helpers/uuid');
-const db = require('../db/db.json');
+const db = require('../db/db.json'); 
+//assigning path here because just putting the path in line 10 was not working
 
 //route for getting the notes from db
-notes.get('/notes', (req, res) => {
-  readFromFile(db).then((data) => res.json(JSON.parse(data))//,
-//   console.log(res)
+notes.get('/api/notes', (req, res) => {
+  readFromFile('./db/db.json').then((data) => 
+  res.json(JSON.parse(data))
   )
-    console.info(`${req.method}`);
-    res.json(db);
-  
+    console.info(req.data);
+    // res.json(db)
 });
 // this is the route for adding notes to the json db file. 
 notes.post('/notes', (req, res) => {
