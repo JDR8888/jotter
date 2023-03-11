@@ -67,7 +67,6 @@ const renderActiveNote = () => {
 };
 
 const handleNoteSave = () => {
-  // e.preventDefault(); //currently notes disappear when save btn clicked. should help
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
@@ -174,7 +173,7 @@ const renderNoteList = async (notes) => {
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-if (window.location.pathname === '/notes') {
+if (window.location.pathname === '/notes.html') {
   saveNoteBtn.addEventListener('click', handleNoteSave);
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
