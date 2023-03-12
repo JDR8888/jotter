@@ -8,11 +8,11 @@ const db = require('../db/db.json');
 
 //route for getting the notes from db
 notes.get('/', (req, res) => {
-  readFromFile(db).then((data) => 
+  readFromFile('db', 'utf-8').then((data) => 
     // return res.json(data);
   res.json(JSON.parse(data))
   )
-    console.info(`${req.method}`);
+    // console.info(`${req.method}`);
     res.json(db);
 });
 // this is the route for adding notes to the json db file. 
@@ -27,7 +27,7 @@ notes.post('/', (req, res) => {
         note_id: uuid(),
       };
   // read the new note and append (not write brand new file) to the db file
-      readAndAppend(newNote, './db/db.json');
+      readAndAppend(newNote, 'db');
       res.json(`notes added successfully 🚀`);
     } else {
       res.error('Error in adding note');
