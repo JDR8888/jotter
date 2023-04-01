@@ -1,26 +1,12 @@
 [
     {
-        "title": "example titel",
-        "text": "got some text heah"
+        "title": "my other note h",
+        "text": "more text agffdgain",
+        "note_id": "7e12"
     },
     {
-        "title": "my note",
-        "text": "alright here",
-        "note_id": "019d"
-    },
-    {
-        "title": "issa note",
-        "text": "does this work now",
-        "note_id": "2eea"
-    },
-    {
-        "title": "igog",
-        "text": "gdfgds now",
-        "note_id": "02f8"
-    },
-    {
-        "title": "igog",
-        "text": "gdfgds now",
-        "note_id": "4304"
+        "title": "not 75",
+        "text": "more stuff",
+        "note_id": "65ff"
     }
 ]

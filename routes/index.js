@@ -8,4 +8,4 @@ const app = router();
 // router.use(notesRouter); 
 app.use('/notes', notesRouter)
 //export the goddamn thing
-module.exports = router;
+module.exports = app;
